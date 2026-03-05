@@ -1,10 +1,12 @@
 import Button from "../../components/Home/LandingPage/Button";
 import Card from "../../components/Home/LandingPage/Card";
+import LPNavBar from "../../components/Home/LandingPage/LPNavBar";
 
 export default function LandingPage(){
     return (
         <>
         <header class="flex flex-col bg-[#285D5E] text-mist-50 text-center p-15">
+            <LPNavBar/>
             <h3 class="m-5">
                 <span class="text-[1em] bg-mist-50/20 rounded-xl p-2">
                 <i class="fa-solid fa-star"></i> Adaptive Micro-Learning for Filipino Students</span>
@@ -22,14 +24,17 @@ export default function LandingPage(){
                 <p class="text-[1.5em]">A smarter way to study, designed for the Filipino learning Experience.</p>
                 <div class="flex flex-row justify-evenly">
                     <Card
+                        icon={<i class="fa-solid fa-book fa-3x m-2"></i>}
                         title={"FlashCards Exam"}
                         text={"Professors create sets with Easy, Medium, and Hard difficulties. Students answer and get instant feedback."}    
                     />
                     <Card
+                        icon={<i class="fa-solid fa-arrow-trend-up fa-3x m-2"></i>}
                         title={"Real Time Analytics"}
                         text={"See your mastery progress, exam frequency, and scores across all subjects"}
                     />
                     <Card
+                        icon={<i class="fa-solid fa-code-branch fa-3x m-2"></i>}
                         title={"Adaptive Learning"}
                         text={"Our system tracks your performance and recommends the right difficulty level for your next attempt."}
                     />
