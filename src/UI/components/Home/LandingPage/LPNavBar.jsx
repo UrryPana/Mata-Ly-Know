@@ -6,10 +6,10 @@ export default function LPNavBar(){
         contents={
             <>
                 <section>
-                    <h1 class="text-[2.5rem]">Mata-Ly-Know</h1>
+                    <h1 className="text-[2.5rem]"><i class="fa-solid fa-brain"></i> Mata-Ly-Know</h1>
                 </section>
                 <section>
-                    <Button title={"Get Started"} color={"yellow"}/>
+                    <Button path={'/Login'} title={"Login/Sign Up"} color={"yellow"}/>
                 </section>
             </>
         }

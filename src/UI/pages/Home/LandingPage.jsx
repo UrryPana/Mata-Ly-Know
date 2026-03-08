@@ -1,48 +1,48 @@
 import Button from "../../components/Home/LandingPage/Button";
 import Card from "../../components/Home/LandingPage/Card";
 import LPNavBar from "../../components/Home/LandingPage/LPNavBar";
+import ColorTheme from "../../styling/ColorTheme";
 
 export default function LandingPage(){
     return (
         <>
-        <header class="flex flex-col bg-[#285D5E] text-mist-50 text-center p-15">
+        <header className={`flex flex-col bg-[${ColorTheme().bgGreen}] text-mist-50 text-center p-15`}>
             <LPNavBar/>
-            <h3 class="m-5">
-                <span class="text-[1em] bg-mist-50/20 rounded-xl p-2">
-                <i class="fa-solid fa-star"></i> Adaptive Micro-Learning for Filipino Students</span>
+            <h3 className="m-5">
+                <span className="text-[1em] bg-mist-50/20 rounded-xl p-2">
+                <i className="fa-solid fa-star"></i> Web-Based Exam Platform for Filipino Teachers & Students</span>
             </h3>
-            <h1 class="text-[4em]">Learn Smarter, <span class="text-yellow-500">Not Harder</span></h1>
-            <p class="m-5 p-5 text-wrap text-[1.5em]">Master any subject with adaptive flashcard exams. Mata-ly-Know adjusts to your level and helps you focus on what matters most.</p>
-            <div class="flex flex-row justify-center gap-5 p-5">
-                <Button title={"I'm a student"} role={"student"} color={"yellow"} icon={<i class="fa-solid fa-person"></i>}/>
-                <Button title={"I'm a professor"} role={"Professor"} color={"white"} icon={<i class="fa-solid fa-chalkboard-user"></i>}/>
+            <h1 className="text-[4em]">Smart Exams, <span className="text-yellow-500">Real Insights</span></h1>
+            <p className="m-5 p-5 text-wrap text-[1.5em]">Create, deploy, and analyze exams with adaptive difficulty, automated checking, and anti-cheating detection - all in one platform.</p>
+            <div className="flex flex-row justify-center gap-5 p-5">
+                <Button path={"/login"} title={"Get Started"} color={"yellow"} icon={<i className="fa-solid fa-person"></i>}/>
             </div>
         </header>
         <main>
-            <section class="bg-[#f8f0e7] p-15 text-center">
-                <h2 class="text-[2em]/25"><strong>Why Mata-Ly-Know?</strong></h2>
-                <p class="text-[1.5em]">A smarter way to study, designed for the Filipino learning Experience.</p>
-                <div class="flex flex-row justify-evenly">
+            <section className={`bg-[${ColorTheme().bgWhite}] p-15 text-center`}>
+                <h2 className="text-[2em]/25"><strong>Everything You Need</strong></h2>
+                <p className="text-[1.5em]">A complete exam platform for teachers and students.</p>
+                <div className="flex flex-row justify-evenly">
                     <Card
-                        icon={<i class="fa-solid fa-book fa-3x m-2"></i>}
-                        title={"FlashCards Exam"}
-                        text={"Professors create sets with Easy, Medium, and Hard difficulties. Students answer and get instant feedback."}    
+                        icon={<i className="fa-solid fa-book fa-3x m-2"></i>}
+                        title={"Exam Builder"}
+                        text={"Create exams with multiple choice, essay, and fill-in-the-blank questions. Set difficulty and time limits."}    
                     />
                     <Card
-                        icon={<i class="fa-solid fa-arrow-trend-up fa-3x m-2"></i>}
-                        title={"Real Time Analytics"}
-                        text={"See your mastery progress, exam frequency, and scores across all subjects"}
+                        icon={<i className="fa-solid fa-arrow-trend-up fa-3x m-2"></i>}
+                        title={"Adaptive Insights"}
+                        text={"Track student performance with real-time analytics, frequency charts, and AI-powered summaries."}
                     />
                     <Card
-                        icon={<i class="fa-solid fa-code-branch fa-3x m-2"></i>}
-                        title={"Adaptive Learning"}
-                        text={"Our system tracks your performance and recommends the right difficulty level for your next attempt."}
+                        icon={<i className="fa-solid fa-code-branch fa-3x m-2"></i>}
+                        title={"Amti-Cheating"}
+                        text={"Tab-switching detections with cheating risk scores. Monitor suspicious behavior Automatically."}
                     />
                 </div>
             </section>
         </main>
         <hr/>
-        <footer class="text-center p-5 bg-[#f8f0e7]">
+        <footer className="text-center p-5 bg-[#f8f0e7]">
             <p>2026 Mata-ly-Know. Built by Filipino Students, for Filipino Students and Educators</p>
         </footer>
         </>
