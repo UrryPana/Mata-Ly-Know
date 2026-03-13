@@ -7,10 +7,55 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production Build
+dist/
+build/
+
+# Vite specific
+.vite/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+bin/
+lib/
+
+# FastAPI / Database
+*.db
+*.sqlite3
+
 node_modules
 dist
 dist-ssr
 *.local
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS files
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
 
 # Editor directories and files
 .vscode/*
