@@ -5,7 +5,6 @@ import Login from './UI/pages/Home/Login'
 import MainDashboard from './UI/pages/Dashboard/MainDashboard'
 
 export default function App() {
-  
   return (
     <Routes>
       <Route path = "/" element={<LandingPage/>}/>

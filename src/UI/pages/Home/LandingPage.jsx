@@ -8,20 +8,24 @@ export default function LandingPage(){
         <>
         <header className={`flex flex-col bg-[${ColorTheme().bgGreen}] text-mist-50 text-center p-15`}>
             <LPNavBar/>
-            <h3 className="m-5">
-                <span className="text-base bg-mist-50/20 rounded-xl p-2">
-                <i className="fa-solid fa-star"></i> Web-Based Exam Platform for Filipino Teachers & Students</span>
-            </h3>
-            <h1 className="lg:text-6xl">Smart Exams, <span className="text-yellow-500">Real Insights</span></h1>
-            <h3 className="m-5 p-5 text-wrap lg:text-2xl">Create, deploy, and analyze exams with adaptive difficulty, automated checking, and anti-cheating detection - all in one platform.</h3>
-            <div className="flex flex-row justify-center gap-5 p-5">
-                <Button path={"/login"} title={"Get Started"} color={"yellow"} icon={<i className="fa-solid fa-person"></i>}/>
+            <div>
+                <h3 className="m-5">
+                    <span className="lg:text-base sm:text-[2em] bg-mist-50/20 rounded-xl p-2">
+                    <i className="fa-solid fa-star"></i> Web-Based Exam Platform for Filipino Teachers & Students</span>
+                </h3>
+                <h1 className="lg:text-6xl">Smart Exams, <span className="text-yellow-500">Real Insights</span></h1>
+                <h3 className="m-5 p-5 text-wrap lg:text-2xl">Create, deploy, and analyze exams with adaptive difficulty, automated checking, and anti-cheating detection - all in one platform.</h3>
+                <div className="flex flex-row justify-center gap-5 p-5">
+                    <Button path={"/login"} title={"Get Started"} color={"yellow"} icon={<i className="fa-solid fa-person"></i>}/>
+                </div>
             </div>
         </header>
         <main>
             <section className={`bg-[${ColorTheme().bgWhite}] p-15 text-center`}>
-                <h2 className="lg:text-4xl/25"><strong>Everything You Need</strong></h2>
-                <p className="lg:text-2xl">A complete exam platform for teachers and students.</p>
+                <div>
+                    <h2 className="lg:text-4xl/25"><strong>Everything You Need</strong></h2>
+                    <p className="lg:text-2xl">A complete exam platform for teachers and students.</p>
+                </div>
                 <div className="flex flex-row justify-evenly">
                     <Card
                         icon={<i className="fa-solid fa-book fa-3x m-2"></i>}
